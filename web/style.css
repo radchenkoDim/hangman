@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+#alphabet {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.letter {
+    display: inline-block;
+    margin: 3px;
+    padding: 15px 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 40px;
+    text-align: center;
+}
+
+.letter:hover {
+    background-color: #d6d6d6;
+}
+
+.letter.correct {
+    background-color: #4caf50;
+    color: white;
+    border-color: #4caf50;
+}
+
+.letter.wrong {
+    background-color: #f44336;
+    color: white;
+    border-color: #f44336;
+}
+
+#word {
+    font-size: 24px;
+    margin: 20px;
+}
+
+#attempts {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#message {
+    font-size: 28px;
+    margin: 20px;
+}
+
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#resetButton:hover {
+    background-color: darkblue;
+}
