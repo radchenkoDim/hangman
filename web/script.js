@@ -63,10 +63,13 @@ function checkWinOrLose() {
     if (!wordContainer.textContent.includes('_')) {
         messageContainer.textContent = 'Перемога!';
         alphabetContainer.innerHTML = ''; // Disable further input
+        alphabetContainer.style.display = 'none';
     } else if (attempts <= 0) {
         messageContainer.textContent = `Огида! Це було слово: "${word}".`;
         alphabetContainer.innerHTML = ''; // Disable further input
+        alphabetContainer.style.display = 'none';
     }
+    
 }
 
 // Handle letter click
@@ -118,6 +121,7 @@ function initializeGame() {
 
 // Reset game
 function resetGame() {
+    alphabetContainer.style.display = 'block';
     word = words_list_ua[Math.floor(Math.random() * words_list_ua.length)];
     attempts = 10;
     guessedLetters = [];
