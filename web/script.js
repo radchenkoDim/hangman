@@ -1,4 +1,3 @@
-const wordList = ['javascript', 'python', 'java'];
 const alphabet = 'абвгґдежзийклмнопрстуфхцчшщьюя'.split('');
 
 const words_list_ua = [
@@ -45,7 +44,6 @@ const attemptsContainer = document.getElementById('attempts');
 const messageContainer = document.getElementById('message');
 const resetButton = document.getElementById('resetButton');
 
-
 // Word display
 function updateWordDisplay() {
     const display = word
@@ -55,12 +53,10 @@ function updateWordDisplay() {
     wordContainer.textContent = display;
 }
 
-
 // Attempts display
 function updateAttempts() {
     attemptsContainer.textContent = `Спроб: ${attempts}`;
 }
-
 
 // Check win or lose
 function checkWinOrLose() {
@@ -72,7 +68,6 @@ function checkWinOrLose() {
         alphabetContainer.innerHTML = ''; // Disable further input
     }
 }
-
 
 // Handle letter click
 function handleLetterClick(event) {
@@ -93,7 +88,6 @@ function handleLetterClick(event) {
     updateAttempts();
     checkWinOrLose();
 }
-
 
 // Initialize game
 function initializeGame() {
@@ -168,10 +162,8 @@ function handleKeyboardInput(event) {
     }
 }
 
-
 // Reset button
 resetButton.addEventListener('click', resetGame);
-
 
 // Start game
 initializeGame();
